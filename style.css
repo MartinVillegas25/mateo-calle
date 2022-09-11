@@ -1,0 +1,268 @@
+*{
+    box-sizing: border-box;
+    margin:0px;
+    font-family: 'Ibarra Real Nova', serif;
+    background-color: #000;
+
+}
+@media(min-width: 768px) {
+    .container{
+        width: 50vw;
+        height: 100vh;
+        background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)),url("./img/mateocalle.jpg");
+        background-size:cover; 
+        position: relative;   
+    }
+
+}
+nav{
+    background: #000;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    
+    
+}
+img{
+    width: 64px;
+    height: 64px;
+    cursor:pointer;
+}
+
+
+
+    .sound{
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+    }
+iframe{
+    padding-bottom: 20px;;
+}
+.body{
+    display: flex;
+}
+.music{
+    width: 50vw;
+    height: 100vh;
+    display: table;
+    
+    
+}
+.button{
+    border:2px solid #ff2800;
+    align-items: center;
+    padding: 20px 66px;
+    color:#fff;
+    background-color: #FF2800;
+}
+.button:hover{
+    background-color: #fff;
+    color: #ff2800;
+    border-color: #fff;
+}
+.socials{
+    display:flex;
+    padding-right: 70px;
+    
+}
+li{
+    list-style: none;
+}
+i{
+    font-size:24px;
+   padding:8px;
+    color:#fff;
+    border:1px solid #ff2800;
+    border-radius: 50%;
+    background-color: #FF2800;
+}
+i:hover{
+    color:#ff2800;
+    background-color: #fff;
+    border-color: #fff;
+}
+.social-icons{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    
+}
+
+a{
+    text-decoration: none;
+    color:#fff;
+    padding-left: 10px;
+    background: transparent;
+}
+
+a:hover{
+    cursor: pointer;
+}
+
+#bio{
+    width: 100%;
+    position:absolute;
+    bottom:0;
+    background-color:transparent;
+    padding:40px 0;    
+    transition: background-color 1.5s ease;
+}
+#bio p{
+    color:transparent;
+    transition: color 2s ease;
+}
+#bio .contact-bio{
+    color:transparent;
+    transition: color 2s ease;
+}
+.container:hover #bio{
+    background-color: rgba(0,0,0,0.3);
+}
+.container:hover #bio p{
+    color:#fff;
+}
+.container:hover #bio .contact-bio{
+    color:#fff;
+
+}
+/* .hide{
+    display:none;
+} */
+
+p{
+    max-width:800px;
+    font-size: 26px;
+    color:#fff;
+    letter-spacing: 1.3px;
+    font-style:italic;
+    background: transparent;
+   
+}
+
+.pages{
+    display:flex;
+    flex-direction:row;
+    z-index: 1;
+    
+}
+
+
+
+.items{
+    font-size: 30px;
+}
+/* .toggle-menu{
+    width:50px;
+    position:absolute;
+    top:0.5rem;
+    left:1rem;
+    filter: invert(0);
+    cursor:pointer;
+    z-index: 999;
+}
+img{
+    max-width: 100%;
+} */
+/* @media only screen and (min-width:768px){
+    .toggle-menu{
+        display:none;
+    }
+} */
+
+/*responsive*/
+/*for phone-max-width:500px*/
+@media only screen and (max-width:500px){
+    #bio{
+        top: 20% !important;;
+    }
+}
+
+
+
+/*for phone-max-width:768px*/
+
+@media(max-width:768px){
+    /* .container{
+        height: 100vh;
+        background-image:linear-gradient(to top, rgba(0,0,0,0.3), rgba(0,0,0,0.5) 70.71%), url('./img/mobile\ \(2\).jpg');
+        background-size:cover; 
+    } */
+    .body{
+        display:block;
+    }
+    .container{
+        min-height: 500px;
+        background-image:linear-gradient(to top, rgba(0,0,0,0.3), rgba(0,0,0,0.5) 70.71%), url('./img/mobile\ \(2\).jpg');
+        background-size:cover; 
+    }
+    .music{
+        min-height: 500px;
+        padding-bottom: 64px;
+        padding-top: 64px;
+    }
+    p{
+        font-size:16px;
+    }
+  
+    i{
+        font-size: 16px;
+        padding-right: 2px;
+        
+    }
+    #home{
+        padding-left:0px;
+    }
+    a{
+        padding-left:10px;
+    }
+    .social-icons{
+        justify-content:space-around
+    }
+    #menu{
+        padding-left:0px;
+    }
+    .items{
+        font-size: 16px;
+        max-width:100%;
+        padding-top: 5px;
+   
+    }
+
+    #bio{
+        width:100%;  
+        position: absolute;     
+        padding-left: 15%;
+        padding-right: 15%;
+        top:35%;
+        z-index: 9999;
+    }
+    p{
+        max-width:500px;  
+    } 
+    nav{
+        position:sticky
+    }
+
+
+}
+/*for phone-min-width:900px*/
+@media only screen and (max-width: 900px) and (min-width: 768px){
+    .items{
+        font-size:24px;
+        padding-left:10px;
+    }
+
+}
+
+/*for phone-min-width:1300px*/
+@media only screen and (min-width: 1300px){
+    #bio{     
+       padding-left: 15%;
+        padding-right: 15%;
+  
+    }
+    p{
+        max-width:1200px;  
+    }
+}
